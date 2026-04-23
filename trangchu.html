@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bếp Á - Công thức món ăn châu Á</title>
+    
+    <link rel="stylesheet" href="trangchu.css">
+    
+    <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@300;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+</head>
+
+<body>
+<div id="container"> 
+    <header>
+        <div class="top-header">
+            <div class="logo">
+                <img src="images/Logo3.png" alt="Logo Bep A">
+            </div> 
+            <form class="search-box">
+                <input type="text" placeholder="Hôm nay ăn gì...">
+                <button type="submit">Tìm</button>
+            </form>
+            <div class="header-right">
+                <div class="contact">
+                    <i class="fa-solid fa-address-book"></i>
+                    <p>Liên hệ</p>
+                </div>
+                <div class="signup">
+                    <i class="fa-solid fa-envelope"></i>
+                    <p>Đăng ký</p>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <div class="menu-bar">
+        <nav>
+            <ul>
+                <li><a href="trangchu.html">TRANG CHỦ</a></li>
+                <li><a href="#">KHAI VỊ</a></li>
+                <li><a href="#">MÓN CHÍNH</a></li>
+                <li><a href="#">TRÁNG MIỆNG</a></li>
+                <li><a href="MonViet/mon-viet.html">MÓN VIỆT</a></li>
+                <li><a href="#">CÔNG THỨC NỔI BẬT</a></li>
+            </ul>
+        </nav>
+    </div>
+
+    <section class="banner">
+        <img class="slide active" src="images/banner1.jpg">
+    </section>
+
+    <button id="topBtn">↑</button>
+
+    <div class="slider-wrap">
+        <button class="btn left" id="prev" aria-label="Cuộn trái"><div class="arrow l"></div></button>
+        <div class="slider-track" id="track">
+            <div class="food-item">
+                <div class="circle"><img src="images/bo.jpg" alt="Bò"></div>
+                <span class="label">Bò</span>
+            </div>
+            <div class="food-item">
+                <div class="circle"><img src="images/ga.jpg" alt="Gà"></div>
+                <span class="label">Gà</span>
+            </div>
+            <div class="food-item">
+                <div class="circle"><img src="images/heo.jpg" alt="Heo"></div>
+                <span class="label">Heo</span>
+            </div>
+            <div class="food-item">
+                <div class="circle"><img src="images/ca.jpg" alt="Cá"></div>
+                <span class="label">Cá</span>
+            </div>
+            <div class="food-item">
+                <div class="circle"><img src="images/tom.jpg" alt="Tôm"></div>
+                <span class="label">Tôm</span>
+            </div>
+            <div class="food-item">
+                <div class="circle"><img src="images/muc.jpg" alt="Mực"></div>
+                <span class="label">Mực</span>
+            </div>
+            <div class="food-item">
+                <div class="circle"><img src="images/cua.jpg" alt="Cua"></div>
+                <span class="label">Cua</span>
+            </div>
+            <div class="food-item">
+                <div class="circle"><img src="images/trung.jpg" alt="Trứng"></div>
+                <span class="label">Trứng</span>
+            </div>
+            <div class="food-item">
+                <div class="circle"><img src="images/cac_loai_oc.jpg" alt="Các loại ốc"></div>
+                <span class="label">Các loại ốc</span>
+            </div>
+            <div class="food-item">
+                <div class="circle"><img src="images/khac.jpg" alt="Nguyên liệu khác"></div>
+                <span class="label">Nguyên liệu khác</span>
+            </div>
+        </div>
+        <button class="btn right" id="next" aria-label="Cuộn phải"><div class="arrow r"></div></button>
+    </div>
+
+    <div class="content">
+        <main>
+            <section class="new-recipes">
+                <h2>CÔNG THỨC MỚI NHẤT</h2>
+                <div class="recipe-box">
+                    <div class="recipe-img"><img src="images/bo-kim-chi.jpg" alt="Bò kim chi"></div>
+                    <div class="recipe-content">
+                        <p class="category">NƯỚNG</p>
+                        <h3>Cách làm bò cuộn nấm kim châm nướng siêu ngon tại nhà</h3>
+                        <div class="stars">
+                            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                        </div>
+                        <p class="mini-content">Bò cuộn nấm kim châm nướng là sự kết hợp hoàn hảo giữa vị giòn của nấm với vị ngọt của thịt bò.</p>
+                    </div>
+                </div>
+
+                <div class="recipe-box">
+                    <div class="recipe-img"><img src="images/goi-cuon.jpg" alt="Gỏi cuốn"></div>
+                    <div class="recipe-content">
+                        <p class="category">CUỐN</p>
+                        <h3>Cách làm gỏi cuốn tôm thịt thanh mát chuẩn vị Việt Nam</h3>
+                        <div class="stars">
+                            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                        </div>
+                        <p class="mini-content">Gỏi cuốn là món ăn nhẹ nổi tiếng với bánh tráng mềm cuốn cùng tôm, thịt, bún và rau sống tươi mát.</p>
+                    </div>
+                </div>
+
+                <div class="recipe-box">
+                    <div class="recipe-img"><img src="images/com-tam.jpg" alt="Cơm tấm"></div>
+                    <div class="recipe-content">
+                        <p class="category">CÁCH CHẾ BIẾN KHÁC</p>
+                        <h3>Cách làm cơm tấm sườn nướng chuẩn vị Sài Gòn</h3>
+                        <div class="stars">
+                            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                        </div>
+                        <p class="mini-content">Cơm tấm sườn nướng thơm lừng ăn kèm trứng ốp la và nước mắm chua ngọt.</p>
+                    </div>
+                </div>
+
+                <div class="recipe-box">
+                    <div class="recipe-img"><img src="images/lon-xao.jpg" alt="Thịt lợn xào xả ớt"></div>
+                    <div class="recipe-content">
+                        <p class="category">XÀO</p>
+                        <h3>Cách làm thịt lợn xào sả ớt ngon tê tái cõi lòng</h3>
+                        <div class="stars">
+                            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                        </div>
+                        <p class="mini-content">Thịt lợn xào sả ớt là món ăn đơn giản với thịt mềm, thơm mùi sả và vị cay nhẹ của ớt.</p>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <aside class="sidebar">
+            <div class="sidebar-box">
+                <img src="images/Sidebar2.png" alt="Thực đơn ngày mới">
+                <div class="sidebar-text">
+                    <h2>💡 MẸO BẾP HAY</h2>
+                    <ul>
+                        <li><i class="fa-solid fa-star"></i> Luộc rau xanh mướt: thêm chút muối + không đậy nắp</li>
+                        <li><i class="fa-solid fa-star"></i> Khử mùi tanh: dùng gừng + rượu hoặc chanh</li>
+                        <li><i class="fa-solid fa-star"></i> Bóc tỏi nhanh: đập nhẹ + lắc trong hộp</li>
+                    </ul>
+                </div>
+            </div>
+        </aside>
+    </div>
+
+    <div class="key">
+        <h2 class="title">Từ Khóa Thịnh Hành</h2>
+        <div class="grid">
+            <div class="card"><img src="images/banh.jpg" alt="Bánh"><span>bánh ngọt đơn giản</span></div>
+            <div class="card"><img src="images/monanhangngay.jpg" alt="Món"><span>món ăn hàng ngày</span></div>
+            <div class="card"><img src="images/khoaitay.jpg" alt="Khoai"><span>khoai tây</span></div>
+            <div class="card"><img src="images/tomnuong.jpg" alt="Tôm"><span>tôm</span></div>
+            <div class="card"><img src="images/oc.jpg" alt="Ốc"><span>ốc</span></div>
+            <div class="card"><img src="images/nam.jpg" alt="Nấm"><span>nấm</span></div>
+            <div class="card"><img src="images/gakho.jpg" alt="ga"><span>thịt gà</span></div>
+            <div class="card"><img src="images/cantay.jpg" alt="Cần tây"><span>cần tây</span></div>
+        </div>
+    </div>
+
+    <div class="wrapper">
+        <div class="content">
+            <main>
+                <section class="new-recipes">
+                    <h2>CÔNG THỨC NỔI BẬT</h2>
+                    <div class="recipe-box">
+                        <div class="recipe-img"><img src="images/garan.jpg" alt="Gà rán"></div>
+                        <div class="recipe-content">
+                            <p class="category">RÁN</p>
+                            <h3>Cách làm gà rán giòn rụm kiểu Hàn Quốc tại nhà</h3>
+                            <div class="stars">
+                                <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                            </div>
+                            <p class="mini-content">Gà rán Hàn Quốc có lớp vỏ giòn rụm, thịt mềm và thấm vị chuẩn quán.</p>
+                        </div>
+                    </div>
+                    <div class="recipe-box">
+                        <div class="recipe-img"><img src="images/mi-xao-hai-san.jpg" alt="Mì xào hải sản"></div>
+                        <div class="recipe-content">
+                            <p class="category">XÀO</p>
+                            <h3>Cách làm mì xào hải sản thơm ngon hấp dẫn</h3>
+                            <div class="stars">
+                                <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                            </div>
+                            <p class="mini-content">Mì xào hải sản kết hợp vị dai của mì với độ ngọt tự nhiên của tôm mực tươi.</p>
+                        </div>
+                    </div>
+                    <div class="recipe-box">
+                        <div class="recipe-img"><img src="images/ca-chien-xu.jpg" alt="Cá chiên xù"></div>
+                        <div class="recipe-content">
+                            <p class="category">CHIÊN</p>
+                            <h3>Cách làm cá chiên xù giòn rụm vàng ươm</h3>
+                            <div class="stars">
+                                <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                            </div>
+                            <p class="mini-content">Cá được tẩm bột và chiên ngập dầu tạo thành lớp vỏ giòn tan.</p>
+                        </div>
+                    </div>
+                    <div class="recipe-box">
+                        <div class="recipe-img"><img src="images/nom-tai-heo.jpg" alt="Nộm tai heo"></div>
+                        <div class="recipe-content">
+                            <p class="category">CÁCH CHẾ BIẾN KHÁC</p>
+                            <h3>Cách làm nộm tai heo chua ngọt giòn sần sật</h3>
+                            <div class="stars">
+                                <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                            </div>
+                            <p class="mini-content">Tai heo được trộn cùng rau thơm và nước trộn chua ngọt tạo nên món nộm hấp dẫn.</p>
+                        </div>
+                    </div>
+                </section>
+            </main>
+        </div>
+
+        <aside class="sidebar2">
+            <div class="explore">
+                <div class="e-text">Khám phá thêm</div>
+                <div class="item"><span>Bếp Á</span><span class="arrow">›</span></div>
+                <div class="item"><span>xúc xích</span><span class="arrow">›</span></div>
+                <div class="item"><span>tỏi</span><span class="arrow">›</span></div>
+                <div class="item"><span>cà chua</span><span class="arrow">›</span></div>
+                <div class="item"><span>mực</span><span class="arrow">›</span></div>
+                <div class="item"><span>củ cải</span><span class="arrow">›</span></div>
+                <div class="item"><span>ngô</span><span class="arrow">›</span></div>
+                <div class="item"><span>bạch tuộc</span><span class="arrow">›</span></div>
+                <div class="item"><span>cá thu</span><span class="arrow">›</span></div>
+                <div class="item"><span>bắp cải</span><span class="arrow">›</span></div>
+                <div class="item"><span>cà tím</span><span class="arrow">›</span></div>
+                <div class="item"><span>nộm</span><span class="arrow">›</span></div>
+                <div class="item"><span>súp lơ</span><span class="arrow">›</span></div>
+                <div class="item"><span>gừng</span><span class="arrow">›</span></div>
+            </div>
+        </aside>
+    </div>
+
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-col">
+                <h2 class="footer-logo">Bếp Á</h2>
+                <p class="footer-text">Mỗi món ăn là một câu chuyện Á!!</p>
+                <p>Nơi chia sẻ công thức nấu ăn ngon, dễ làm cho mọi chiếc bụng đói</p>
+            </div>
+            <div class="footer-col">
+                <h3>Liên hệ</h3>
+                <div class="col2-icon">
+                    <p><i class="fa-solid fa-location-dot"></i> Hà Nội</p>
+                    <p><i class="fa-solid fa-phone"></i> 0123456789</p>
+                    <p><i class="fa-solid fa-envelope"></i> bepA@gmail.com</p>
+                </div>
+            </div>
+            <div class="footer-col">
+                <h3>Theo dõi chúng tôi</h3>
+                <div class="social-icons">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-youtube"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-pinterest"></i></a>
+                </div>
+                <ul class="footer-links">
+                    <li><a href="#">Giới thiệu</a></li>
+                    <li><a href="#">Chính sách bảo mật</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>Copyright © 2026 Bếp Á – Nấu ăn vui vẻ!</p>
+        </div>
+    </footer>
+</div>
+
+<script>
+$(document).ready(function(){
+    // 1. Nút cuộn lên đầu trang
+    $(window).scroll(function(){
+        if($(this).scrollTop() > 200) $("#topBtn").fadeIn();
+        else $("#topBtn").fadeOut();
+    });
+    $("#topBtn").click(function(){
+        $("html, body").animate({scrollTop: 0}, 600);
+    });
+
+    // 2. Logic Slider Vô Hạn
+    const $track = $('#track');
+    
+    // NHÂN BẢN: Sao chép toàn bộ item để tạo vòng lặp
+    const $items = $track.children().clone();
+    $track.append($items); 
+
+    // THIẾT LẬP VỊ TRÍ BAN ĐẦU: 
+    // Cho thanh cuộn bắt đầu từ giữa để khi rê sang trái sẽ thấy hình ngay
+    const originalWidth = $track[0].scrollWidth / 2;
+    $track.scrollLeft(originalWidth);
+
+    let scrollInterval;
+    const speed = 4; // Tốc độ trượt
+
+    function startScroll(direction) {
+        scrollInterval = setInterval(function() {
+            let curPos = $track.scrollLeft();
+
+            if (direction === 'right') {
+                // Nếu trượt sang phải quá độ dài gốc -> nhảy về 0
+                if (curPos >= originalWidth * 2 - $track.width()) {
+                    $track.scrollLeft(curPos - originalWidth);
+                } else {
+                    $track.scrollLeft(curPos + speed);
+                }
+            } else {
+                // Nếu trượt sang trái quá đầu lề -> nhảy sang bên phải
+                if (curPos <= 0) {
+                    $track.scrollLeft(curPos + originalWidth);
+                } else {
+                    $track.scrollLeft(curPos - speed);
+                }
+            }
+        }, 15);
+    }
+
+    function stopScroll() { clearInterval(scrollInterval); }
+
+    // Gán sự kiện Hover cho các nút
+    $('#next').on('mouseenter', () => startScroll('right')).on('mouseleave', stopScroll);
+    $('#prev').on('mouseenter', () => startScroll('left')).on('mouseleave', stopScroll);
+
+    // 3. Tính năng Kéo chuột (Drag)
+    let isDown = false, startX, scrollLeftPos;
+    $track.on('mousedown', (e) => {
+        isDown = true; startX = e.pageX - $track.offset().left;
+        scrollLeftPos = $track.scrollLeft();
+        stopScroll();
+    });
+    $(window).on('mouseup mouseleave', () => { isDown = false; });
+    $track.on('mousemove', (e) => {
+        if (!isDown) return;
+        e.preventDefault();
+        const x = e.pageX - $track.offset().left;
+        const walk = (x - startX); 
+        $track.scrollLeft(scrollLeftPos - walk);
+    });
+});
+</script>
+</body>
+</html>
